@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
                 // so we'll just check there is a very small error between them
                 if (ballY > heightToPosition(missileHeight) && (ballX - missileX).abs() < 0.03) {
                     resetMissile();
-                    ballX = 5;
+                    ballX = 1.1;
                     timer.cancel();
                 }
             });
